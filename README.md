@@ -98,5 +98,5 @@ text
 
 ## 🧑‍💻 Autor
 
-- **Ricardo Souza**  
-- 📧 ricardo3355@gmail.com
+**Ricardo Souza**  
+📧 ricardo3355@gmail.com
