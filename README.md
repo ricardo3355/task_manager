@@ -1,32 +1,32 @@
-# 📌 Gerenciador de Tarefas - API RESTful em Java
+📌 Gerenciador de Tarefas - API RESTful em Java
 
-Este é um projeto de **API RESTful** desenvolvido em **Java** com o objetivo de gerenciar tarefas de forma simples, didática e eficiente.
+Este é um projeto de API RESTful desenvolvido em Java com o objetivo de gerenciar tarefas de forma simples, didática e eficiente.
 
 ---
 
-## 🎯 Descrição do Projeto
+🎯 Descrição do Projeto
 
-O projeto consiste na criação de uma API RESTful para gerenciamento de tarefas (CRUD), utilizando o **framework Spring Boot** e seguindo boas práticas de desenvolvimento.  
+O projeto consiste na criação de uma API RESTful para gerenciamento de tarefas (CRUD), utilizando o framework Spring Boot e seguindo boas práticas de desenvolvimento.  
 
 Foi implementado o uso de:
-- ✅ **JUnit** para testes unitários  
-- 🧪 **Postman** para testes de requisições HTTP  
-- 💾 **Persistência de dados** com Spring Data JPA  
-- 🔗 **Injeção de dependências** com Spring Framework  
-- 🌐 **Spring Boot**, que facilita a criação e configuração de aplicações Java  
-- 🖼️ **Thymeleaf**, para fins de estruturação ou expansão futura para visualização (opcional)
-- 🕓 **Timestamp**, para controle de tempo em registros  
-- 🧱 **Tomcat**, servidor embutido utilizado automaticamente no Spring Boot  
+- ✅ JUnit para testes unitários  
+- 🧪 Postman para testes de requisições HTTP  
+- 💾 Persistência de dados com Spring Data JPA  
+- 🔗 Injeção de dependências com Spring Framework  
+- 🌐 Spring Boot, que facilita a criação e configuração de aplicações Java  
+- 🖼️ Thymeleaf, para fins de estruturação ou expansão futura para visualização (opcional)
+- 🕓 Timestamp, para controle de tempo em registros  
+- 🧱 Tomcat, servidor embutido utilizado automaticamente no Spring Boot  
 
 ---
 
-## 🏗️ Estrutura e Inicialização
+🏗️ Estrutura e Inicialização
 
-O projeto foi iniciado com o **Maven**, um sistema de automação e gerenciamento de dependências e builds para projetos Java.
+O projeto foi iniciado com o Maven, um sistema de automação e gerenciamento de dependências e builds para projetos Java.
 
-### 🔧 Spring Boot Initializr
+🔧 Spring Boot Initializr
 
-A estrutura base foi gerada utilizando o [Spring Boot Initializr](https://start.spring.io), onde foram injetadas as seguintes dependências:
+A estrutura base foi gerada utilizando o Spring Boot Initializr (https://start.spring.io), onde foram injetadas as seguintes dependências:
 
 - Spring Web  
 - Spring Data JPA  
@@ -37,7 +37,7 @@ A estrutura base foi gerada utilizando o [Spring Boot Initializr](https://start.
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+⚙️ Tecnologias Utilizadas
 
 - Java 17+
 - Spring Boot
@@ -51,10 +51,31 @@ A estrutura base foi gerada utilizando o [Spring Boot Initializr](https://start.
 
 ---
 
-## 💾 Configuração do Banco de Dados
+📂 Estrutura do Projeto
 
-No arquivo `application.properties`:
-```properties
+demorest/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/
+│       └── java/
+├── com/
+├── META-INF/
+├── resources/
+├── src/
+├── target/
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+
+---
+
+💾 Configuração do Banco de Dados
+
+No arquivo application.properties:
+
 spring.datasource.url=jdbc:mysql://localhost:3306/bd_rest?createDatabaseIfNotExist=true
 spring.datasource.username=root
 spring.datasource.password=root
@@ -62,41 +83,35 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.open-in-view=true
 
-## 🧪 Exemplos de Requisições
+---
+
+🧪 Exemplos de Requisições
 
 ### Criar tarefa
 
-**POST** `/tarefas`
+POST /tarefas
 
 {
-    "nome": "Desenvolvimento da API ",
+    "nome": "Desenvolvimento da API",
     "dataEntrega": "2025-12-12",
     "responsavel": "Ricardo RU 0000000"
 }
 
-text
-
----
-
 ### Atualizar tarefa
 
-**PUT** `/tarefas/{id}`
-
----
+PUT /tarefas/{id}
 
 ### Deletar tarefa
 
-**DELETE** `/tarefas/{id}`
-
----
+DELETE /tarefas/{id}
 
 ### Buscar todas tarefas
 
-**GET** `/tarefas`
+GET /tarefas
 
 ---
 
-## 🧑‍💻 Autor
+🧑‍💻 Autor
 
-**Ricardo Souza**  
-📧 ricardo3355@gmail.com
+- Ricardo Souza  
+- 📧 ricardo3355@gmail.com
