@@ -51,24 +51,6 @@ A estrutura base foi gerada utilizando o [Spring Boot Initializr](https://start.
 
 ---
 
-## 📂 Estrutura do Projeto
-demorest/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ └── resources/
-│ │ └── application.properties
-│ └── test/
-│ └── java/
-├── com/
-├── META-INF/
-├── resources/
-├── src/
-├── target/
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-
 ## 💾 Configuração do Banco de Dados
 
 No arquivo `application.properties`:
